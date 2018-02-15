@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="计算机技术," />
+  <meta name="keywords" content="网络," />
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="自从有了微博，微信，简书等各种在线平台，自媒体如雨后春笋般，漫山遍野的发芽、生长。但是各个平台，文章发布有自己的工具，格式各不相同，对于咱这种半调子技术，又想在多个平台分享自己的想法，心得的个人，怎么才能简单的写文章，然后发布成一样的格式呢？">
-<meta name="keywords" content="计算机技术">
+<meta name="keywords" content="网络">
 <meta property="og:type" content="article">
 <meta property="og:title" content="善用Markdown,轻松写文章">
 <meta property="og:url" content="http://beautyhome.github.io/2018/02/14/善用Markdown-轻松写文章/index.html">
@@ -90,7 +90,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5067306-91c22ff537ba6213.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5067306-5990700126050f6a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5067306-12d208d496959f06.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-02-14T20:25:19.643Z">
+<meta property="og:updated_time" content="2018-02-15T16:45:57.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="善用Markdown,轻松写文章">
 <meta name="twitter:description" content="自从有了微博，微信，简书等各种在线平台，自媒体如雨后春笋般，漫山遍野的发芽、生长。但是各个平台，文章发布有自己的工具，格式各不相同，对于咱这种半调子技术，又想在多个平台分享自己的想法，心得的个人，怎么才能简单的写文章，然后发布成一样的格式呢？">
@@ -256,9 +256,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -326,6 +364,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机技术/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -443,7 +503,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/计算机技术/" rel="tag"># 计算机技术</a>
+            <a href="/tags/网络/" rel="tag"># 网络</a>
           
         </div>
       
@@ -555,13 +615,22 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -656,6 +725,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -789,26 +864,51 @@
 
 
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script type="text/javascript">
-  new Valine({
-      av: AV,
-      el: '#comments' ,
-      app_id: 'DUFk4JCoYNHYQazREbTT9DbI-gzGzoHsz',
-      app_key: 'OPz4g6kgVKtn5762poT6GGsU',
-      placeholder: 'ヾﾉ≥∀≤)o  亲爱的小主，有何指教', // 默认 null
-      notify: false, // 默认 false
-      verify: false, // 默认 false
-      path: , // 默认 window.location.pathname
-      avatar: 'mm' // 默认 ''
-  });
-</script>
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+	    av: AV,
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'DUFk4JCoYNHYQazREbTT9DbI-gzGzoHsz',
+        appKey: 'OPz4g6kgVKtn5762poT6GGsU',
+        placeholder: 'ヾﾉ≥∀≤)o  亲爱的小主，有何指教',
+        avatar:'mm',
+		path: , // 默认 window.location.pathname
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
 
   
 
 
 
 
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
 
   
 
@@ -817,6 +917,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   

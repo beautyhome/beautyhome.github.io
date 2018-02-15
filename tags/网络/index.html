@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hx Improvements LLC">
-<meta property="og:url" content="http://beautyhome.github.io/tags/计算机技术/index.html">
+<meta property="og:url" content="http://beautyhome.github.io/tags/网络/index.html">
 <meta property="og:site_name" content="Hx Improvements LLC">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://beautyhome.github.io/tags/计算机技术/"/>
+  <link rel="canonical" href="http://beautyhome.github.io/tags/网络/"/>
 
 
 
 
 
-  <title>标签: 计算机技术 | Hx Improvements LLC</title>
+  <title>标签: 网络 | Hx Improvements LLC</title>
   
 
 
@@ -247,9 +247,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -271,7 +309,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>计算机技术<small>标签</small>
+        <h1>网络<small>标签</small>
         </h1>
       </div>
 
@@ -366,13 +404,22 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -451,6 +498,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -580,26 +633,51 @@
 
 
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script type="text/javascript">
-  new Valine({
-      av: AV,
-      el: '#comments' ,
-      app_id: 'DUFk4JCoYNHYQazREbTT9DbI-gzGzoHsz',
-      app_key: 'OPz4g6kgVKtn5762poT6GGsU',
-      placeholder: 'ヾﾉ≥∀≤)o  亲爱的小主，有何指教', // 默认 null
-      notify: false, // 默认 false
-      verify: false, // 默认 false
-      path: , // 默认 window.location.pathname
-      avatar: 'mm' // 默认 ''
-  });
-</script>
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+	    av: AV,
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'DUFk4JCoYNHYQazREbTT9DbI-gzGzoHsz',
+        appKey: 'OPz4g6kgVKtn5762poT6GGsU',
+        placeholder: 'ヾﾉ≥∀≤)o  亲爱的小主，有何指教',
+        avatar:'mm',
+		path: , // 默认 window.location.pathname
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
 
   
 
 
 
 
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
 
   
 
@@ -608,6 +686,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
